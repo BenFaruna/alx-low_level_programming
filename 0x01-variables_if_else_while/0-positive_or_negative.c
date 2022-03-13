@@ -1,6 +1,7 @@
 #include <stdlib.h>
 #include <time.h>
 /* more headers goes there */
+#include <stdio.h>
 
 /**
  * main - prints random numbers
@@ -24,7 +25,7 @@ int main(void)
 	}
 	else
 	{
-		printf("is zero")
+		printf("is zero");
 	}
 
 	return (0);
