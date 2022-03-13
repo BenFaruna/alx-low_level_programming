@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -S -masm=intel main.s $CFILE -o $(tr ".c" ".s" | tr -d [[:digit:]]-)
+gcc -S -masm=intel main.s $CFILE -o $(tr ".c" ".s")
