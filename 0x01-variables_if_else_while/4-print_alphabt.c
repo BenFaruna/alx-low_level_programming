@@ -14,14 +14,14 @@ int main(void)
 	{
 		if (alpha[i] == 'e' || alpha[i] == 'q')
 		{
+			i++;
 			continue;
 		}
 		else
 		{
 			putchar(alpha[i]);
+			i++;
 		}
-
-		i++;
 	}
 	putchar('\n');
 
