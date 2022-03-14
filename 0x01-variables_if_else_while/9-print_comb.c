@@ -10,20 +10,15 @@ int main(void)
 
 	while (ch <= '9')
 	{
+		putchar(ch);
 		if (ch != '9')
 		{
-			putchar(ch);
 			putchar(',');
 			putchar(' ');
-			ch++;
 		}
-		else
-		{
-			putchar(ch);
-			putchar('\n');
-			ch++;
-		}
+		ch++;
 	}
+	putchar('\n');
 
 	return (0);
 
