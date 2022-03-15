@@ -1,2 +1,1 @@
-int _putchar(c);
-int main(void);
+#include "_putchar.c"
