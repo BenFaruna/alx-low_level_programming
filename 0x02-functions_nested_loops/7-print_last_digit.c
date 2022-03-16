@@ -12,7 +12,12 @@ int print_last_digit(int n)
 	int result;
 	int temp;
 
-	if (n >= 0)
+	if (n > 99)
+	{
+		_putchar((num / 10) % 10 + '0');
+		_putchar((num % 100) % 10 + '0');
+	}
+	else if (n >= 0)
 	{
 		result = n % 10;
 		temp = result + '0';
