@@ -16,25 +16,25 @@ void times_table(void)
 		{
 			if ((i * j) > 9)
 			{
-				if (j != 9)
-				{
-					_putchar(' ');
-				}
-
+				_putchar(' ');
 				_putchar((i * j) / 10 + '0');
 				_putchar((i * j) % 10 + '0');
-				_putchar(',');
+
+				if (j != 9)
+				{
+					_putchar(',');
+				}
 			}
 			else if ((i * j) <= 9)
 			{
+				_putchar(' ');
+				_putchar(' ');
+				_putchar(i * j + '0');
+
 				if (j != 9)
 				{
-					_putchar(' ');
-					_putchar(' ');
+					_putchar(',');
 				}
-
-				_putchar(i * j + '0');
-				_putchar(',');
 			}
 
 		}

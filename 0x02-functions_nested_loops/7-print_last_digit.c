@@ -14,8 +14,8 @@ int print_last_digit(int n)
 
 	if (n > 99)
 	{
-		_putchar((num / 10) % 10 + '0');
-		_putchar((num % 100) % 10 + '0');
+		write(1, (num / 10) % 10 + '0', 1);
+		write(1, (num % 100) % 10 + '0', 1);
 	}
 	else if (n >= 0)
 	{

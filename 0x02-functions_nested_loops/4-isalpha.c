@@ -5,7 +5,7 @@
  *
  * Return: 1 for true and 0 when false
  */
- int _isalpha(int c)
+int _isalpha(int c)
 {
 	int result;
 
