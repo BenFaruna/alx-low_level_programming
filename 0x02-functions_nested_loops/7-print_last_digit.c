@@ -1,5 +1,5 @@
-#include <unistd.h>
-#include <stdio.h>
+int _putchar(char c);
+
 /**
  * print_last_digit - prints the last digit of a number
  *
@@ -14,8 +14,8 @@ int print_last_digit(int n)
 
 	if (n > 99)
 	{
-		write(1, (num / 10) % 10 + '0', 1);
-		write(1, (num % 100) % 10 + '0', 1);
+		_putchar((num / 10) % 10 + '0');
+		_putchar((num % 100) % 10 + '0');
 	}
 	else if (n >= 0)
 	{
@@ -28,7 +28,7 @@ int print_last_digit(int n)
 		result = n % 10;
 		temp = result + '0';
 	}
-	write(1, &temp, 1);
+	_putchar(temp);
 
 	return (result);
 }
