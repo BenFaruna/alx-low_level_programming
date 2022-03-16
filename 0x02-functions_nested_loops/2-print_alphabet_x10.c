@@ -1,7 +1,7 @@
 #include <unistd.h>
 
 /**
- * print_alphabet - print letters of the alphabet a-z 10 times
+ * print_alphabet_x10 - print letters of the alphabet a-z 10 times
  *
  * Return: void
  */
