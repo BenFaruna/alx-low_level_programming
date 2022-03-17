@@ -16,11 +16,6 @@ int print_last_digit(int n)
 		n = n * -1;
 	}
 
-	if (n > 100000)
-	{
-		n = n / 100000;
-	}
-
 	result = n % 10;
 
 	_putchar(result + '0');
