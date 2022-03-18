@@ -1,14 +1,14 @@
 #include "main.h"
 
 /**
- * print_most_numbers - prints numbers but 2 and 4
+ * more_numbers - prints numbers but 2 and 4
  *
  * Return: void
  */
- void more_numbers(void)
- {
- 	int i;
- 	int j;
+void more_numbers(void)
+{
+	int i;
+	int j;
 
 	for (i = 0; i < 10; i++)
 	{
@@ -24,4 +24,4 @@
 		}
 		_putchar('\n');
 	}
- }
+}
