@@ -7,9 +7,9 @@
  *
  * Return: 1 for True and 0 for false
  */
- int _isupper(int c)
- {
- 	if (c >= 65 && c <= 91)
+int _isupper(int c)
+{
+	if (c >= 65 && c <= 90)
 	{
 		return (1);
 	}
@@ -17,4 +17,4 @@
 	{
 		return (0);
 	}
- }
+}
