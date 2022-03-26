@@ -1,26 +1,6 @@
 #include "main.h"
 
 /**
- * _strlen - prints the length of a string
- *
- *  @s: string to be checked
- *  Return: length of str
- */
-int _strlen(char *s)
-{
-	int i;
-
-	for (i = 0; i >= -1; i++)
-	{
-		if (s[i] == '\0')
-		{
-			break;
-		}
-	}
-	return (i);
-}
-
-/**
  * puts2 - prints every other character
  *
  * @str: string to be printed
@@ -37,11 +17,16 @@ void puts2(char *str)
 		{
 			break;
 		}
+		else if (i % 2 != 0)
+		{
+			i++;
+			continue;
+		}
 		else
 		{
 			_putchar(str[i]);
 		}
-		i = i + 2;
+		i++;
 	}
 	_putchar('\n');
 }
