@@ -15,22 +15,25 @@ void print_array(int *a, int n)
 
 	if (n <= 0)
 	{
+		printf("\n");
 		return;
 	}
 
 
 	while (i < n)
 	{
-		printf("%d", a[i]);
-		i++;
 
 		if (i != n)
 		{
+			printf("%d", a[i]);
 			printf(", ");
 		}
 		else
 		{
+			printf("%d", a[i]);
 			printf("\n");
 		}
+
+		i++;
 	}
 }
