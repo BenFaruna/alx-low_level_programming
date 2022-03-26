@@ -13,10 +13,11 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	if (i <= 0)
+	if (n <= 0)
 	{
 		return;
 	}
+
 
 	while (i < n)
 	{
