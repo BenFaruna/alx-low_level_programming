@@ -3,7 +3,7 @@
 /**
  * cap_string - capitalizes the first letter of every word
  *
- * @str: the string to be checked
+ * @s: the string to be checked
  *
  * Return: pointer to the string
  */
