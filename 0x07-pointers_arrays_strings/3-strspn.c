@@ -35,7 +35,7 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			/*printf("s: %c\n", *(s_ptr+i));*/
 			/*printf("accept: %c\n", *(accept_ptr+(j-1)));*/
-			num = i - 1;
+			num = i;
 			break;
 		}
 	}
