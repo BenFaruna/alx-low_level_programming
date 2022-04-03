@@ -2,7 +2,7 @@
 /**
  * _strchr - checks for first occurrence of letter in a string
  *
- * @char: string to be checked
+ * @s: string to be checked
  * @c: characted to be checked for
  *
  * Return: pointer to first occurrence of 'c' in 's' or NULL if not found
@@ -15,8 +15,8 @@ char *_strchr(char *s, char c)
 	{
 		if (*s == c)
 		{
-			return s;
+			return (s);
 		}
 	}
-	return NULL;
+	return (NULL);
 }
