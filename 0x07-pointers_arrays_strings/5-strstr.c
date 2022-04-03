@@ -21,11 +21,6 @@ char *_strstr(char *haystack, char *needle)
 	result = NULL;
 	needle_len = strlen(needle);
 
-	if (needle == "")
-	{
-		return (haystack_ptr);
-	}
-
 	for (i = 0; *haystack++; i++)
 	{
 		if (*(haystack_ptr + i) == *needle_ptr)
