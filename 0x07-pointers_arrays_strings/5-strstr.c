@@ -23,7 +23,7 @@ char *_strstr(char *haystack, char *needle)
 
 	if (needle == "")
 	{
-		return (haystack_ptr)
+		return (haystack_ptr);
 	}
 
 	for (i = 0; *haystack++; i++)
