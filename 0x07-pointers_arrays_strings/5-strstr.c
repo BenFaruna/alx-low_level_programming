@@ -25,20 +25,18 @@ char *_strstr(char *haystack, char *needle)
 	{
 		if (*(haystack_ptr + i) == *needle_ptr)
 		{
-			/*printf("haystack: %c, needle: %c\n", *(haystack_ptr + i), *needle_ptr);*/
 			for (j = 0; j < needle_len; j++)
 			{
-				/* printf("BEFORE BREAK ========= haystack: %c, needle: %c\n", *(haystack_ptr + (i+j)), *(needle_ptr+j)); */
 				if (*(haystack_ptr + (i + j)) != *(needle_ptr + j))
-					{
-						/*printf("BREAK ========= haystack: %c, needle: %c\n", *(haystack_ptr + i), *needle_ptr);*/
-						break;
-					}
-				else if ((j == needle_len - 1) && (*(haystack_ptr + (i + j - 1)) == *(needle_ptr + (j - 1))))
-					{
-						result = (haystack_ptr + i);
-						return (result);
-					}
+				{
+					break;
+				}
+				else if ((j == needle_len - 1) &&
+					(*(haystack_ptr + (i + j - 1)) == *(needle_ptr + (j - 1))))
+				{
+					result = (haystack_ptr + i);
+					return (result);
+				}
 			}
 		}
 		else
@@ -46,5 +44,5 @@ char *_strstr(char *haystack, char *needle)
 			continue;
 		}
 	}
-	return result;
+	return (result);
 }

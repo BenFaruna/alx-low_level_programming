@@ -6,7 +6,7 @@
  * @s: string to be checked
  * @accept: bytes that should be checked for
  *
- * Return:  number of bytes in the initial segment of s which consist only of bytes from accept
+ * Return:  number of bytes in the initial segment of s
  */
 unsigned int _strspn(char *s, char *accept)
 {
