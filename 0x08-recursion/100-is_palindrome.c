@@ -12,7 +12,7 @@
  */
 int palindrome_checker(char *s, int start, int len)
 {
-	if ((start > len))
+	if (start > len)
 		return (1);
 
 	if (*(s + start) == *(s + len))
