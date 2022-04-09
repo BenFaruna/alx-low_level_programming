@@ -15,7 +15,7 @@ int _sqrt(int n, int start)
 	if (n == 1)
 		return (1);
 
-	if (start > n/2)
+	if (start > n / 2)
 		return (-1);
 
 	if ((start * start) != n)
