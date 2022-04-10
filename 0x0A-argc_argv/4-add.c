@@ -1,6 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - prints the name of the program
@@ -19,7 +20,7 @@ int main(int argc, char **argv)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) < 1)
+			if (atoi(argv[i]) < 1 || isalnum(argv[i])))
 			{
 				printf("Error\n");
 
