@@ -20,7 +20,7 @@ int main(int argc, char **argv)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (atoi(argv[i]) < 1 || isalnum(argv[i])))
+			if (atoi(argv[i]) < 1 || isalnum(argv[i]))
 			{
 				printf("Error\n");
 
