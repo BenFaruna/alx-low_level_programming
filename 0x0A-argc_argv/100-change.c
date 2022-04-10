@@ -9,21 +9,25 @@
  *
  * Return: the number of coins
  */
-int coin_remaining(int coin, int count)
+int coin_remaining(int coin)
 {
-	if (coin == 0)
-		return (count);
+	int count = 0;
 
-	if (coin >= 25)
-		return (coin_remaining(coin - 25, count + 1));
-	else if (coin >= 10)
-		return (coin_remaining(coin - 10, count + 1));
-	else if (coin >= 5)
-		return (coin_remaining(coin - 5, count + 1));
-	else if (coin >= 2)
-		return (coin_remaining(coin - 2, count + 1));
-	else if (coin >= 1)
-		return (coin_remaining(coin - 1, count + 1));
+	while (coin != 0)
+	{
+		if (coin >= 25)
+			coin = coin - 25;
+		else if (coin >= 10)
+			coin = coin - 10;
+		else if (coin >= 5)
+			coin = coin - 5;
+		else if (coin >= 2)
+			coin = coin - 2;
+		else if (coin >= 1)
+			coin = coin - 1;
+
+		count++;
+	}
 
 	return (count);
 }
@@ -41,7 +45,6 @@ int main(int argc, char **argv)
 	int coin;
 	int result;
 
-	coin = atoi(argv[1]);
 
 	if (argc == 1)
 	{
@@ -49,7 +52,9 @@ int main(int argc, char **argv)
 		exit(EXIT_FAILURE);
 	}
 
-	result = coin_remaining(coin, 0);
+	coin = atoi(argv[1]);
+
+	result = coin_remaining(coin);
 
 	printf("%d\n", result);
 
