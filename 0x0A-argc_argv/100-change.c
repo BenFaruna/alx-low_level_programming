@@ -5,13 +5,15 @@
  * coin_remaining - gets the number of coins needed for change
  *
  * @coin: the amount
- * @count: the number of coins
  *
  * Return: the number of coins
  */
 int coin_remaining(int coin)
 {
 	int count = 0;
+
+	if (coin < 0)
+		return (0);
 
 	while (coin != 0)
 	{
