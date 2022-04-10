@@ -5,6 +5,9 @@
 /**
  * main - prints the nunber of arguments sent to the program
  *
+ * @argc: argument count
+ * @argv: array of arguments
+ *
  * Return: 0
  */
 int main(int argc, char __attribute__((unused)) **argv)

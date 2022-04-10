@@ -5,6 +5,9 @@
 /**
  * main - prints the name of the program
  *
+ * @argc: argument count
+ * @argv: array of arguments
+ *
  * Return: 0
  */
 int main(int __attribute__((unused)) argc, char **argv)
