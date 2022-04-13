@@ -11,26 +11,15 @@
  */
 char *_strdup(char *str)
 {
-	int i;
-	char *str_ptr;
+	unsigned int i;
+	long unsigned int len = sizeof(str);
+	char *str_ptr = str;
+	char *str_cpy = malloc(sizeof(char) * len);
 
-	if (str == NULL)
-		return (NULL);
-
-
-	str_ptr = malloc((sizeof(char) * 8));
-
-	if (str_ptr == NULL)
-		return (NULL);
-
-	for (i = 0; i > -1; i++)
+	for (i = 0; i < len; i++)
 	{
-		if (str[i] < 65 || str[i] > 122)
-			break;
-
-		str_ptr[i] = *(str + i);
+		str_cpy[i] = *(str_ptr + i);
 	}
 
-	return (str_ptr);
-
+	return (str_cpy);
 }
