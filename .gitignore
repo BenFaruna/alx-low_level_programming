@@ -3,3 +3,6 @@
 .vscode/
 main.c
 /*/*.o
+*.c
+*.exe
+*.o

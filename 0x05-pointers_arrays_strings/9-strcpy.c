@@ -7,7 +7,7 @@
  * @dest: the param to be copied to
  * @src: the param to be copied from
  *
- * Return: the pointer to the dest
+ * Return: a pointer to the dest
  */
 char *_strcpy(char *dest, char *src)
 {
@@ -19,5 +19,5 @@ char *_strcpy(char *dest, char *src)
 	}
 	dest[i] = '\0';
 
-	return (src);
+	return (dest);
 }
