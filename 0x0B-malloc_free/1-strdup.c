@@ -13,7 +13,7 @@ int _strlen(char *str)
 	unsigned int len = 0;
 
 	if (str == NULL)
-		return(0);
+		return (0);
 
 	while (*str)
 	{
