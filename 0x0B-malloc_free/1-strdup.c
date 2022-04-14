@@ -1,6 +1,20 @@
 #include "main.h"
 #include <stdlib.h>
-#include <string.h>
+#include <stdio.h>
+/**
+*/
+int _strlen(char *str)
+{
+	unsigned int len = 0;
+
+	while (*str)
+	{
+		len++;
+		str++;
+	}
+
+	return (len);
+}
 
 /**
  * _strdup - returns a pointer to a newly allocated space in memory
@@ -11,25 +25,25 @@
  */
 char *_strdup(char *str)
 {
-	int str_size;
-	char *dup;
-	char *dup_offset;
+	unsigned int i;
+	unsigned int len = _strlen(str);
+	char *str_ptr;
 
-	/* Allocate memory for duplicate */
-	str_size = strlen(str);
-	dup = malloc(sizeof(char) * (str_size + 1));
-	if (dup == NULL)
-		return(NULL);
+	if (str == NULL)
+		return (NULL);
 
-	/* Copy string */
-	dup_offset = dup;
-	while(*str)
+
+	str_ptr = malloc(sizeof(char) * len);
+
+	if (str_ptr == NULL)
+		return (NULL);
+
+	for (i = 0; i <= len; i++)
 	{
-		*dup_offset = *str;
-		dup_offset++;
-		str++;
+		str_ptr[i] = *(str + i);
 	}
-	*dup_offset = '\0';
+	str_ptr[i] = '\0';
 
-	return(dup);
+	return (str_ptr);
+
 }
