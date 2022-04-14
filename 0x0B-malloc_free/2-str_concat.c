@@ -39,10 +39,15 @@ char *str_concat(char *s1, char *s2)
 	int len2 = _strlen(s2);
 	int total_len = len1 + len2;
 
-	char *new_str = malloc(sizeof(char) * total_len);
+	char *new_str = malloc(sizeof(char) * (total_len + 1));
 
 	if (new_str == NULL)
 		return (NULL);
+
+	if (s1 == NULL)
+		s1 = "";
+	else if (s2 == NULL)
+		s2 = "";
 
 	for (i = 0; i <= len1; i++)
 		new_str[i] = s1[i];

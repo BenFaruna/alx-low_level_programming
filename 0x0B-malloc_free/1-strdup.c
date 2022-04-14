@@ -12,6 +12,9 @@ int _strlen(char *str)
 {
 	unsigned int len = 0;
 
+	if (str == NULL)
+		return(0);
+
 	while (*str)
 	{
 		len++;
@@ -31,14 +34,14 @@ int _strlen(char *str)
 char *_strdup(char *str)
 {
 	unsigned int i;
-	unsigned int len = _strlen(str);
+	unsigned int len;
 	char *str_ptr;
 
 	if (str == NULL)
 		return (NULL);
 
-
-	str_ptr = malloc(sizeof(char) * len);
+	len = _strlen(str);
+	str_ptr = malloc(sizeof(char) * (len + 1));
 
 	if (str_ptr == NULL)
 		return (NULL);
