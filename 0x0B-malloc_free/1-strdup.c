@@ -1,8 +1,13 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
+
 /**
-*/
+ * _strlen - counts the number of characters in a string
+ *
+ * @str: the string to be counted
+ *
+ * Return: the length of the string
+ */
 int _strlen(char *str)
 {
 	unsigned int len = 0;
