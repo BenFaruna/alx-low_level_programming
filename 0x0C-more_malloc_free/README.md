@@ -1,4 +1,5 @@
 ## Tasks
+
 0. Trust no one
 Write a function that allocates memory using malloc.
 File: 0-malloc_checked.c
@@ -14,3 +15,4 @@ File: 2-calloc.c
 3. array_range
 Write a function that creates an array of integers.
 File: 3-array_range.c
+

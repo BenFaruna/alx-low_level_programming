@@ -25,7 +25,7 @@ int _strlen(char *str)
 }
 
 /**
- * string_nconcat - add the contents of two strings together with a certain number of 
+ * string_nconcat - add the contents of two strings together 
  *
  * @s1: the first string
  * @s2: the second string
@@ -39,13 +39,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	unsigned int len1 = _strlen(s1);
 	unsigned int len2 = _strlen(s2);
 	unsigned int total_len;
+	char *new_str;
 
 	if (n > len2)
 		total_len = len1 + len2;
 	else
 		total_len = len1 + n;
 
-	char *new_str = malloc(sizeof(char) * (total_len + 1));
+	new_str = malloc(sizeof(char) * (total_len + 1));
 
 	if (new_str == NULL)
 		return (NULL);
@@ -62,7 +63,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		if (i == len2)
 			break;
-		
+
 		new_str[(len1 + i)] = s2[i];
 	}
 
@@ -70,3 +71,4 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	return (new_str);
 }
+
