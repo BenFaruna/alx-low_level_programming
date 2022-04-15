@@ -2,7 +2,7 @@
 /*/*.exe
 .vscode/
 main.c
-/*/*.o
-*.c
+/*/*.c
 *.exe
 *.o
+*.c
