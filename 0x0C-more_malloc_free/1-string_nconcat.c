@@ -59,7 +59,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	for (i = 0; i <= len1; i++)
 		new_str[i] = s1[i];
 
-	for (i = 0; i <= n; i++)
+	for (i = 0; i < n; i++)
 	{
 		if (i == len2)
 			break;
