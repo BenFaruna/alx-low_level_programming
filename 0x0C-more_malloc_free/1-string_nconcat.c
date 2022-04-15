@@ -25,14 +25,14 @@ int _strlen(char *str)
 }
 
 /**
- * string_nconcat - add the contents of two strings together 
- *
- * @s1: the first string
- * @s2: the second string
- * @n: the number of characters to be added from s2
- *
- * Return: pointer to memory space containing the concatenated strings
- */
+* string_nconcat - add the contents of two strings together
+*
+* @s1: the first string
+* @s2: the second string
+* @n: the number of characters to be added from s2
+*
+* Return: pointer to memory space containing the concatenated strings
+*/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	unsigned int i;
@@ -63,12 +63,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		if (i == len2)
 			break;
-
 		new_str[(len1 + i)] = s2[i];
 	}
-
 	new_str[(len1 + i)] = '\0';
 
 	return (new_str);
 }
-
