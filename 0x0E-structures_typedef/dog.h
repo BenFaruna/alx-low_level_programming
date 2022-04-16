@@ -1,7 +1,5 @@
 #ifndef DOG_H
 #define DOG_H
-#endif /*DOG_H */
-
 /**
  * struct dog - struct with properties of a dog
  *
@@ -20,3 +18,5 @@ struct dog
  * dog - Typedef for Dog
  */
 typedef struct dog dog;
+
+#endif /*DOG_H */
