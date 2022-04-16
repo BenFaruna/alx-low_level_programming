@@ -1,3 +1,4 @@
 #ifndef OBJECTLIKEMACRO_H
+#define OBJECTLIKEMACRO
 #define SIZE 1024
 #endif /* OBJECTLIKEMACRO_H */
