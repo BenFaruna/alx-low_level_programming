@@ -1,3 +1,3 @@
-#ifndef FUNCTIONLIKEMACRO_H
+#ifndef FUNCTION_LIKE_MACRO_H
 #define ABS(val) ((val) < 0 ? -(val) : (val))
-#endif /* FUNCTIONLIKEMACRO_H */
+#endif /* FUNCTION_LIKE_MACRO_H */
