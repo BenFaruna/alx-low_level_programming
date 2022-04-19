@@ -5,10 +5,10 @@
 /**
  * print_numbers - prints the numbers in the variadic parameter
  *
- * @seperator: printed in between numbers
+ * @separator: printed in between numbers
  * @n: the number of variadic parameters
  */
-void print_numbers(const char *seperator, const unsigned int n, ...)
+void print_numbers(const char *separator, const unsigned int n, ...)
 {
 	va_list ap;
 
@@ -26,8 +26,8 @@ void print_numbers(const char *seperator, const unsigned int n, ...)
 	{
 		if ((i != 0) && (i < n))
 		{
-			if (seperator != NULL)
-				printf("%s", seperator);
+			if (separator != NULL)
+				printf("%s", separator);
 		}
 		printf("%d", va_arg(ap, int));
 	}
