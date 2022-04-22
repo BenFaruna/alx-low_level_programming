@@ -2,6 +2,12 @@
 #include <string.h>
 #include "lists.h"
 
+/**
+ * add_node - add node to the beginning of list
+ *
+ * @head: the first element of the list
+ * @char: the element to be addded
+ */
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node = malloc(sizeof(list_t));
