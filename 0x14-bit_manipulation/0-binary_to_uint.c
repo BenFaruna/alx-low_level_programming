@@ -3,6 +3,30 @@
 #include <stdio.h>
 
 /**
+ * power - computes the exponetial of a number
+ *
+ * @a: the number
+ * @b: the power
+ *
+ * Return: the number raised to b power
+ */
+unsigned int power(unsigned int a, unsigned int b)
+{
+	unsigned int result = a;
+	unsigned int i;
+
+	if (b == 0)
+		return (1);
+
+	for (i = 0; i < b-1; i++)
+	{
+		result = result * a;
+	}
+
+	return (result);
+}
+
+/**
  * binary_to_int - converts a binary string into base 10
  *
  * @b: the binary string
@@ -33,7 +57,7 @@ unsigned int binary_to_uint(const char *b)
 		if (b[index] == '1' || b[index] == '0')
 		{
 			conversion[index] = (b[index] - '0') * \
-			pow(2, (len - index - 1));
+			power(2, (len - index - 1));
 		}
 		else
 			return (0);
