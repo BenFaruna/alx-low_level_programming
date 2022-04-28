@@ -18,7 +18,7 @@ unsigned int power(unsigned int a, unsigned int b)
 	if (b == 0)
 		return (1);
 
-	for (i = 0; i < b-1; i++)
+	for (i = 0; i < b - 1; i++)
 	{
 		result = result * a;
 	}
@@ -27,7 +27,7 @@ unsigned int power(unsigned int a, unsigned int b)
 }
 
 /**
- * binary_to_int - converts a binary string into base 10
+ * binary_to_uint - converts a binary string into base 10
  *
  * @b: the binary string
  *
@@ -56,7 +56,7 @@ unsigned int binary_to_uint(const char *b)
 
 		if (b[index] == '1' || b[index] == '0')
 		{
-			conversion[index] = (b[index] - '0') * \
+			conversion[index] = (b[index] - '0') *
 			power(2, (len - index - 1));
 		}
 		else
