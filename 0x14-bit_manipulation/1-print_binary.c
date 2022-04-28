@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print-binary - print the binary format of integer
+ * print_binary - print the binary format of integer
  *
  * @n: integer
  *
