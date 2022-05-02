@@ -1,5 +1,13 @@
 #include "main.h"
 
+/**
+ * read_textfile - read the contents of a text file by certain letters
+ *
+ * @filename: the path to the text file
+ * @letters: the number of letters to be read
+ *
+ * Return: the number of letter printed
+ */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	ssize_t count = 0;
