@@ -1,5 +1,5 @@
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
@@ -7,7 +7,7 @@
  *
  * @h: the head of the list
  *
- * Return: the number of elements in the list
+ * Return: the number of nodes in the list
  */
 size_t print_list(const list_t *h)
 {
